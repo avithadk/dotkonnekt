@@ -1,15 +1,9 @@
 import styled from "@emotion/styled";
-import {
-  AppBar,
-  Container,
-} from "@mui/material";
+import { AppBar, Container } from "@mui/material";
 
-const CustomAppbar = styled((props) => {
-   return <AppBar {...props} />;
-  })(({ background }) => ({
-    //  backgroundColor : properties?.CustomAppbar?.backgroundColor ? properties?.CustomAppbar?.backgroundColor : "#ffffff"
-    backgroundColor : background? background : "#ffffff"
-  }));
+const CustomAppBar = styled(AppBar)(({ background }) => ({
+  backgroundColor: background ? background : "#ffffff",
+}));
 
 const MainContainer = styled(Container)(({ theme }) => ({
   "&.MuiContainer-root": {
@@ -30,7 +24,4 @@ const MainContainer = styled(Container)(({ theme }) => ({
   },
 }));
 
-export {
-  CustomAppbar,
-  MainContainer,
-};
+export { CustomAppBar, MainContainer };
