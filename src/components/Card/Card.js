@@ -30,8 +30,8 @@ const ProductCard = ({ backgroundColor }) => {
               <Image
                 id="sg-headerLogoImg"
                 src={Cardimg}
-                width={"50%"}
-                height={"100%"}
+                width={"200"}
+                height={"400"}
                 alt=""
               />
             </CardMediaContainer>
