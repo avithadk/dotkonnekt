@@ -11,7 +11,7 @@ import {
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 import StarRating from "./StarRating";
-import Cardimg from "../../../public/forgotImg3.png";
+import Cardimg from "../../../public/logo192.png";
 import Image from "next/image";
 
 const ProductCard = ({ backgroundColor }) => {
@@ -29,10 +29,10 @@ const ProductCard = ({ backgroundColor }) => {
             <CardMediaContainer id="sg-productCardMediaContainer">
               <Image
                 id="sg-headerLogoImg"
-                src={"/forgotImg3.png"}
+                src={Cardimg}
                 width={"200"}
                 height={"400"}
-                alt=""
+                alt="logo"
               />
             </CardMediaContainer>
 
