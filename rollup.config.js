@@ -6,6 +6,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import { terser } from "rollup-plugin-terser";
 import pkg from "./package.json";
 import url from "@rollup/plugin-url";
+import { memo } from "react";
 export default {
   input: "src/index.js",
   output: [
@@ -30,9 +31,13 @@ export default {
         "node_modules/react-is/index.js": [
           "isValidElementType",
           "isContextConsumer",
+          "isFragment",
+          "ForwardRef",
+          "Memo",
         ],
       },
     }),
+
     nodeResolve({
       modulesOnly: true,
       preferBuiltins: false,
@@ -63,5 +68,7 @@ export default {
     "next",
     "postcss",
     "typescript",
+    "@mui/icons-material",
+    "react/jsx-runtime",
   ],
 };
