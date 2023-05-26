@@ -29,7 +29,7 @@ const ProductCard = ({ backgroundColor }) => {
             <CardMediaContainer id="sg-productCardMediaContainer">
               <Image
                 id="sg-headerLogoImg"
-                src={Cardimg}
+                src={"/forgotImg3.png"}
                 width={"200"}
                 height={"400"}
                 alt=""
